@@ -110,6 +110,21 @@ export default function App() {
           />
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-6 h-6" />
         </div>
+
+        {/* Buy Me a Coffee Button - Custom Neo-Brutalist Version */}
+        <div className="mt-8 flex justify-center">
+          <a 
+            href="https://www.buymeacoffee.com/anusanta" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 bg-[#FFDD00] border-4 border-black px-8 py-3 font-bold shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all active:translate-x-[4px] active:translate-y-[4px] active:shadow-none"
+            id="bmc-button"
+          >
+            <span className="text-3xl" style={{ fontFamily: "'Cookie', cursive" }}>
+              Support the heart ❤️
+            </span>
+          </a>
+        </div>
       </header>
 
       <main className="max-w-6xl mx-auto">
