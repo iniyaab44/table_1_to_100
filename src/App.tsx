@@ -172,18 +172,18 @@ export default function App() {
                     </button>
                   </div>
 
-                  <div className="grid grid-cols-2 gap-x-12 gap-y-2 font-mono text-lg font-bold relative">
+                  <div className="grid grid-cols-2 gap-x-4 sm:gap-x-12 gap-y-2 font-mono text-sm sm:text-lg font-bold relative">
                     {/* Vertical Divider Line (4px thickness) */}
-                    <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-black -translate-x-1/2 hidden sm:block" />
+                    <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-black -translate-x-1/2" />
 
                     {Array.from({ length: half }, (_, i) => i + 1).map((i) => (
                       <div key={i} className="contents">
-                        <div className="flex justify-between border-b border-black/10 py-1 pr-4">
-                          <span>{n} × {i}</span>
+                        <div className="flex justify-between items-center border-b border-black/10 py-1 pr-2 sm:pr-4 whitespace-nowrap tabular-nums">
+                          <span className="mr-1">{n} × {i}</span>
                           <span>= {n * i}</span>
                         </div>
-                        <div className="flex justify-between border-b border-black/10 py-1 pl-4">
-                          <span>{n} × {i + half}</span>
+                        <div className="flex justify-between items-center border-b border-black/10 py-1 pl-2 sm:pl-4 whitespace-nowrap tabular-nums">
+                          <span className="mr-1">{n} × {i + half}</span>
                           <span>= {n * (i + half)}</span>
                         </div>
                       </div>
