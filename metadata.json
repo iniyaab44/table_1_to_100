@@ -1,0 +1,5 @@
+{
+  "name": "Multiplication Tables 1-30",
+  "description": "An interactive multiplication tables app (1-30) with search and text-to-speech functionality.",
+  "requestFramePermissions": []
+}
